@@ -23,7 +23,6 @@ class WelcomeViewController: UIViewController {
             index += 1
         }
         
-        
     }
     
 
