@@ -3,6 +3,7 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
 
@@ -12,16 +13,18 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 
         titleLabel.text = ""
+        let text = "⚡️FlashChat"
         
         //MARK: - Animation with Timer
         var index = 0.0
-        let text = "⚡️FlashChat"
         for letter in text {
             Timer.scheduledTimer(withTimeInterval: 0.1 * index, repeats: false){ timer in
                 self.titleLabel.text?.append(letter)
             }
             index += 1
         }
+        
+        
         
     }
     
